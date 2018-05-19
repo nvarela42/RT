@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<scene>
+	<camera>
+		<pos x="0" y="0" z="-20" />
+		<look_at x="0" y="0" z="0" />
+		<up x="0" y="1" z="0" />
+	</camera>
+	<lights>
+		<!-- <light radius="1" spot="0" rad_spot="0.6" >
+			<pos x="3" y="4" z="11" />
+			<color r="0.996" g="0.996" b="0.768" />
+			<intensity intensity="0.3" /> -->
+		<!-- </light> -->
+		<light radius="0" spot="1" rad_spot="0.7" >
+			<pos x="3" y="-2" z="-10" />
+			<color r="0.996" g="0.996" b="0.768" />
+			<intensity intensity="0" />
+		</light>
+		<light radius="0" spot="0" rad_spot="0.8" >
+			<pos x="3" y="3" z="10" />
+			<color r="0.996" g="0.996" b="0.768" />
+			<intensity intensity="-0" />
+		</light>
+	</lights>
+	<objects>
+		<plane materia_id="1" >
+			<pos x="0" y="0" z="12" />
+			<normal x="0" y="0" z="1" />
+			<translation x="0" y="0" z="0" />
+		</plane>
+		<plane materia_id="2">
+			<pos x="0" y="-1" z="0" />
+			<normal x="0" y="1" z="0" />
+			<translation x="0" y="0" z="0" />
+		</plane>
+		<sphere radius="1" materia_id="3">
+			<pos x="-2" y="-0.3" z="0" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="0.5" materia_id="5">
+			<pos x="2.91" y="-0" z="-6" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1" materia_id="4">
+			<pos x="0.4" y="-1" z="-5" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="0.5" materia_id="6">
+			<pos x="3" y="3" z="12.4" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+	</objects>
+	<materias>
+		<materia id="1" texture_id="2">
+			<color r="0.721" g="0.831" b="0.878" />
+			<shiness shiness="0.7" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+		<materia id="2" normal_id="1" >
+			<color r="0.643" g="0.831" b="0.878" />
+			<shiness shiness="0" />
+			<reflect reflect="0.9" />
+			<refract refract="0" />
+		</materia>
+		<materia id="3" >
+			<color r="0" g="0.29" b="0.6" />
+			<shiness shiness="0" />
+			<reflect reflect="0" />
+			<refract refract="1.06" />
+		</materia>
+		<materia id="4" >
+			<color r="0" g="0.29" b="0.6" />
+			<shiness shiness="0.9" />
+			<reflect reflect="0.8" />
+			<refract refract="1.02" />
+		</materia>
+		<materia id="5" >
+			<color r="0" g="0.29" b="0.6" />
+			<shiness shiness="0.9" />
+			<reflect reflect="0.8" />
+			<refract refract="1.05" />
+		</materia>
+		<materia id="6" normal_id="4" >
+			<color r="0.996" g="0.996" b="0.768" />
+			<shiness shiness="0.9" />
+			<reflect reflect="0.8" />
+			<refract refract="0" />
+		</materia>
+	</materias>
+	<textures>
+		<texture id="1">
+			<type type="0" />
+			<src texture="./textures/723-normal.jpg" />
+			<origin width="0" height="0"/>
+			<scale width="1" height="1"/>
+		</texture>
+		<texture id="2">
+			<type type="0" />
+			<src texture="./textures/stars_col_texture.png" />
+			<origin width="800" height="0"/>
+			<scale width="1" height="1"/>
+		</texture>
+		<texture id="3">
+			<type type="0" />
+			<src texture="./textures/brique_normal.png" />
+			<origin width="0" height="0"/>
+			<scale width="1" height="1"/>
+		</texture>
+		<texture id="4">
+			<type type="0" />
+			<src texture="./textures/moon_normal.png" />
+			<origin width="0" height="0"/>
+			<scale width="1" height="1"/>
+		</texture>
+	</textures>
+	<!-- <ambiant>
+		<color r="0.5" g="0.5" b="0.5" />
+	</ambiant> -->
+</scene>

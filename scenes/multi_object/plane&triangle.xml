@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<scene>
+	<camera>
+		<pos x="15" y="0" z="-60" />
+		<look_at x="0" y="0" z="0" />
+		<up x="0" y="1" z="0" />
+	</camera>
+	<lights>
+		<light radius="0.5" spot="0">
+			<pos x="-6" y="3" z="5" />
+		    <color r="1" g="1" b="1" />
+		</light>
+	</lights>
+	<objects>
+		<plane materia_id="1">
+			<pos x="0" y="-1" z="0" />
+			<normal x="0" y="1" z="0" />
+			<translation x="0" y="0" z="0" />
+		</plane>
+		<triangle materia_id="2">
+			<pos_edge1 x="-6" y="0" z="10" />
+			<pos_edge2 x="6" y="0" z="10" />
+			<pos_edge3 x="0" y="12" z="10" />
+		</triangle>
+	</objects>
+	<materias>
+		<materia id="1">
+			<color r="0.9" g="0.25" b="0.9" />
+			<shiness shiness="0.8" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+		<materia id="2" texture_id="1">
+			<color r="0.7" g="0.9" b="0.9" />
+			<shiness shiness="0.8" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+	</materias>
+	<textures>
+		<texture id="1">
+			<type type="0" />
+			<src texture="./textures/norm_06.bmp" />
+			<origin width="0" height="0"/>
+			<scale width="1" height="1"/>
+		</texture>
+	</textures>
+</scene>

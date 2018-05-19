@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<scene>
+	<camera>
+		<pos x="0" y="0" z="-50" />
+		<look_at x="0" y="-1" z="10" />
+		<up x="0" y="1" z="0" />
+	</camera>
+	<lights>
+		<light radius="0" spot="0" rad_spot="0.5" >
+			<pos x="4" y="0" z="-15" />
+		    <color r="1" g="0" b="1" />
+			<intensity intensity="0" />
+		</light>
+		<light radius="0" spot="0" rad_spot="0.5" >
+			<pos x="-4" y="0" z="-15" />
+			<color r="1" g="1" b="0" />
+			<intensity intensity="0" />
+		</light>
+		<light radius="0" spot="0" rad_spot="0.5" >
+			<pos x="-4" y="-5" z="-25" />
+			<color r="1" g="0" b="1" />
+			<intensity intensity="0" />
+		</light>
+	</lights>
+	<objects>
+		<sphere radius="1.5" materia_id="1">
+			<pos x="-7" y="0" z="-20" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.5" materia_id="1">
+			<pos x="-6" y="0" z="-14" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.5" materia_id="1">
+			<pos x="-5" y="0" z="-8" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.5" materia_id="1">
+			<pos x="-4" y="0" z="-2" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.5" materia_id="1">
+			<pos x="7" y="0" z="-20" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.5" materia_id="1">
+			<pos x="6" y="0" z="-14" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.5" materia_id="1">
+			<pos x="5" y="0" z="-8" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.5" materia_id="1">
+			<pos x="4" y="0" z="-2" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<cylinder radius="0.9" materia_id="2">
+			<pos x="-7" y="0" z="-20" />
+			<rotation x="0" y="0" z="0" />
+			<translation x="0" y="0" z="0" />
+			<limit_pos limit_pos="3" />
+		</cylinder>
+		<cylinder radius="0.9" materia_id="2">
+			<pos x="-6" y="1" z="-14" />
+			<rotation x="0" y="0" z="0" />
+			<translation x="0" y="0" z="0" />
+			<limit_pos limit_pos="3" />
+		</cylinder>
+		<cylinder radius="0.9" materia_id="2">
+			<pos x="-5" y="1" z="-8" />
+			<rotation x="0" y="0" z="0" />
+			<translation x="0" y="0" z="0" />
+			<limit_pos limit_pos="3" />
+		</cylinder>
+		<cylinder radius="0.9" materia_id="2">
+			<pos x="-4" y="1" z="-2" />
+			<rotation x="0" y="0" z="0" />
+			<translation x="0" y="0" z="0" />
+			<limit_pos limit_pos="3" />
+		</cylinder>
+		<cylinder radius="0.9" materia_id="2">
+			<pos x="7" y="1" z="-20" />
+			<rotation x="0" y="0" z="0" />
+			<translation x="0" y="0" z="0" />
+			<limit_pos limit_pos="3" />
+		</cylinder>
+		<cylinder radius="0.9" materia_id="2">
+			<pos x="6" y="1" z="-14" />
+			<rotation x="0" y="0" z="0" />
+			<translation x="0" y="0" z="0" />
+			<limit_pos limit_pos="3" />
+		</cylinder>
+		<cylinder radius="0.9" materia_id="2">
+			<pos x="5" y="1" z="-8" />
+			<rotation x="0" y="0" z="0" />
+			<translation x="0" y="2" z="0" />
+			<limit_pos limit_pos="3" />
+		</cylinder>
+		<cylinder radius="0.9" materia_id="2">
+			<pos x="4" y="1" z="-2" />
+			<rotation x="0" y="0" z="0" />
+			<translation x="0" y="0" z="0" />
+			<limit_pos limit_pos="3" />
+		</cylinder>
+		<plane materia_id="3">
+			<pos x="0" y="-3" z="0" />
+			<normal x="0" y="1" z="0" />
+			<translation x="0" y="0" z="0" />
+		</plane>
+		<plane materia_id="4">
+			<pos x="0" y="0" z="5" />
+			<normal x="0" y="0" z="1" />
+			<translation x="0" y="0" z="0" />
+		</plane>
+		<triangle materia_id="5">
+			<pos_edge1 x="-4" y="-3" z="4.9" />
+			<pos_edge2 x="4" y="-3" z="4.9" />
+			<pos_edge3 x="0" y="2" z="4.9" />
+		</triangle>
+		<triangle materia_id="6">
+			<pos_edge1 x="-3" y="-3" z="0" />
+			<pos_edge2 x="3" y="-3" z="0" />
+			<pos_edge3 x="0" y="1" z="0" />
+		</triangle>
+		<triangle materia_id="7">
+			<pos_edge1 x="-2" y="-3" z="-5" />
+			<pos_edge2 x="2" y="-3" z="-5" />
+			<pos_edge3 x="0" y="0" z="-5" />
+		</triangle>
+		<triangle materia_id="8">
+			<pos_edge1 x="-1" y="-3" z="-10" />
+			<pos_edge2 x="1" y="-3" z="-10" />
+			<pos_edge3 x="0" y="-1" z="-10" />
+		</triangle>
+	</objects>
+	<materias>
+		<materia id="1" >
+			<color r="0" g="0.29" b="0.6" />
+			<shiness shiness="0.99" />
+			<reflect reflect="0.9" />
+			<refract refract="0" />
+		</materia>
+		<materia id="2" normal_id="4">
+			<color r="0.37" g="0.37" b="0.37" />
+			<shiness shiness="0.9" />
+			<reflect reflect="0.9" />
+			<refract refract="0" />
+		</materia>
+		<materia id="3">
+			<color r="0.8" g="1" b="0.6" />
+			<shiness shiness="0.9" />
+			<reflect reflect="0.9" />
+			<refract refract="0" />
+		</materia>
+		<materia id="4" texture_id="0" normal_id="2" >
+			<color r="0.01" g="0.01" b="0.01" />
+			<shiness shiness="0.9" />
+			<reflect reflect="0.9" />
+			<refract refract="0" />
+		</materia>
+		<materia id="5" >
+			<color r="0.3" g="0.3" b="0.3" />
+			<shiness shiness="0" />
+			<reflect reflect="0.9" />
+			<refract refract="0" />
+		</materia>
+		<materia id="6" >
+			<color r="0.6" g="0.6" b="0.6" />
+			<shiness shiness="0" />
+			<reflect reflect="0.9" />
+			<refract refract="0" />
+		</materia>
+		<materia id="7" >
+			<color r="0.9" g="0.9" b="0.9" />
+			<shiness shiness="0" />
+			<reflect reflect="0.9" />
+			<refract refract="0" />
+		</materia>
+		<materia id="8" >
+			<color r="1" g="1" b="1" />
+			<shiness shiness="0" />
+			<reflect reflect="0.9" />
+			<refract refract="1.05" />
+		</materia>
+	</materias>
+	<textures>
+		<texture id="1">
+			<type type="0" />
+			<src texture="" />
+			<origin width="0" height="450"/>
+			<scale width="4" height="4"/>
+		</texture>
+		<texture id="2">
+			<type type="0" />
+			<src texture="./textures/Head_normalscopy.jpg" />
+			<origin width="1048" height="350"/>
+			<scale width="1" height="1"/>
+		</texture>
+		<texture id="3">
+			<type type="0" />
+			<src texture="./textures/img_texture.bmp" />
+			<origin width="0" height="0"/>
+			<scale width="1" height="1"/>
+		</texture>
+		<texture id="4">
+			<type type="0" />
+			<src texture="./textures/norm_06.bmp" />
+			<origin width="0" height="0"/>
+			<scale width="1" height="1"/>
+		</texture>
+		<texture id="5">
+			<type type="0" />
+			<src texture="./textures/723-normal.jpg" />
+			<origin width="0" height="0"/>
+			<scale width="1" height="1"/>
+		</texture>
+	</textures>
+</scene>

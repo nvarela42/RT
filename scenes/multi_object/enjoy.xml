@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<scene>
+	<camera>
+		<pos x="0" y="0" z="-40" />
+		<look_at x="0" y="0" z="0" />
+		<up x="0" y="1" z="0" />
+	</camera>
+	<lights>
+		<light radius="0" spot="0" rad_spot="0.6" >
+			<pos x="10" y="0" z="-15" />
+			<color r="0" g="0.7" b="1" />
+			<intensity intensity="-0.1" />
+		</light>
+		<light radius="0" spot="0" rad_spot="0.6" >
+			<pos x="-10" y="0" z="-15" />
+			<color r="1" g="1" b="0" />
+			<intensity intensity="-0.1" />
+		</light>
+	</lights>
+	<objects>
+		<plane materia_id="1">
+			<pos x="0" y="0" z="26" />
+			<normal x="0" y="0" z="1" />
+			<translation x="0" y="0" z="0" />
+		</plane>
+		<cylinder radius="1" materia_id="2">
+			<pos x="0" y="-4" z="-20" />
+			<rotation x="90" y="0" z="-1" />
+			<translation x="0" y="0" z="0" />
+		</cylinder>
+		<cylinder radius="1" materia_id="2">
+			<pos x="0" y="-4" z="-5" />
+			<rotation x="90" y="0" z="-1" />
+			<translation x="0" y="0" z="0" />
+		</cylinder>
+		<cylinder radius="1" materia_id="2">
+			<pos x="0" y="-4" z="10" />
+			<rotation x="90" y="0" z="-1" />
+			<translation x="0" y="0" z="0" />
+		</cylinder>
+		<cylinder radius="1" materia_id="2">
+			<pos x="0" y="-4" z="25" />
+			<rotation x="90" y="0" z="-1" />
+			<translation x="0" y="0" z="0" />
+		</cylinder>
+		<cylinder radius="1" materia_id="2">
+			<pos x="0" y="4" z="-20" />
+			<rotation x="90" y="0" z="-1" />
+			<translation x="0" y="0" z="0" />
+		</cylinder>
+		<cylinder radius="1" materia_id="2">
+			<pos x="0" y="4" z="-5" />
+			<rotation x="90" y="0" z="-1" />
+			<translation x="0" y="0" z="0" />
+		</cylinder>
+		<cylinder radius="1" materia_id="2">
+			<pos x="0" y="4" z="10" />
+			<rotation x="90" y="0" z="-1" />
+			<translation x="0" y="0" z="0" />
+		</cylinder>
+		<cylinder radius="1" materia_id="2">
+			<pos x="0" y="4" z="25" />
+			<rotation x="90" y="0" z="-1" />
+			<translation x="0" y="0" z="0" />
+		</cylinder>
+		<sphere radius="1.5" materia_id="3">
+			<pos x="-5" y="0" z="-20" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.5" materia_id="3">
+			<pos x="-5" y="0" z="-5" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.5" materia_id="3">
+			<pos x="-5" y="0" z="10" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.5" materia_id="3">
+			<pos x="-5" y="0" z="25" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.5" materia_id="3">
+			<pos x="5" y="0" z="-20" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.5" materia_id="3">
+			<pos x="5" y="0" z="-5" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.5" materia_id="3">
+			<pos x="5" y="0" z="10" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.5" materia_id="3">
+			<pos x="5" y="0" z="25" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+	</objects>
+	<materias>
+		<materia id="1" >
+			<color r="0.08" g="0.08" b="0.08" />
+			<shiness shiness="0" />
+			<reflect reflect="0.7" />
+			<refract refract="0" />
+		</materia>
+		<materia id="2" normal_id="3">
+			<color r="0.7" g="0.9" b="0.9" />
+			<shiness shiness="0" />
+			<reflect reflect="0.9" />
+			<refract refract="0" />
+		</materia>
+		<materia id="3" texture_id="1" normal_id="2">
+			<color r="0" g="0.29" b="0.6" />
+			<shiness shiness="0" />
+			<reflect reflect="0.9" />
+			<refract refract="0" />
+		</materia>
+	</materias>
+	<textures>
+		<texture id="1">
+			<type type="0" />
+			<src texture="./textures/img_texture.bmp" />
+			<origin width="0" height="0"/>
+			<scale width="1" height="1"/>
+		</texture>
+		<texture id="2">
+			<type type="0" />
+			<src texture="./textures/img_normal.bmp" />
+			<origin width="0" height="0"/>
+			<scale width="1" height="1"/>
+		</texture>
+		<texture id="3">
+			<type type="0" />
+			<src texture="./textures/brique_normal.png" />
+			<origin width="0" height="0"/>
+			<scale width="1" height="1"/>
+		</texture>
+	</textures>
+	<!-- <ambiant>
+		<color r="1" g="0.5" b="0.7" />
+	</ambiant> -->
+</scene>

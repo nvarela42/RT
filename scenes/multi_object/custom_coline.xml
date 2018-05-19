@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<scene>
+    <camera>
+        <pos x="9" y="4" z="-25" />
+        <look_at x="0" y="0" z="10" />
+        <up x="0" y="1" z="0" />
+    </camera>
+    <lights>
+        <light radius="0" rad_spot="0.7" spot="0">
+            <pos x="-5" y="3" z="0" />
+            <color r="0" g="0" b="1" />
+        </light>
+		<light radius="0"  rad_spot="0.7" spot="0">
+			<pos x="5" y="3" z="0" />
+			<color r="0.99" g="0.57" b="0.79" />
+		</light>
+		<light radius="0" rad_spot="0.8" spot="1">
+			<pos x="0" y="2" z="2" />
+			<color r="1" g="1" b="1" />
+		</light>
+    </lights>
+    <objects>
+		<plane materia_id="1">
+			<pos x="0" y="-1" z="0" />
+			<normal x="0" y="1" z="0" />
+			<translation x="0" y="0" z="0" />
+		</plane>
+		<plane materia_id="2">
+			<pos x="-15" y="0" z="0" />
+			<normal x="1" y="0" z="0" />
+			<translation x="0" y="0" z="0" />
+		</plane>
+		<plane materia_id="2">
+			<pos x="15" y="0" z="0" />
+			<normal x="1" y="0" z="0" />
+			<translation x="0" y="0" z="0" />
+		</plane>
+		<plane materia_id="3">
+			<pos x="0" y="0" z="40" />
+			<normal x="0" y="0" z="1" />
+			<translation x="0" y="0" z="0" />
+		</plane>
+        <sphere radius="0.7" materia_id="4">
+            <pos x="0" y="-0.2" z="3" />
+            <rotation x="0" y="-90" z="0" />
+            <translation x="0" y="0" z="0" />
+        </sphere>
+        <sphere radius="1" materia_id="4">
+            <pos x="-6.2" y="0" z="25" />
+            <rotation x="0" y="90" z="0" />
+            <translation x="0" y="0" z="0" />
+        </sphere>
+		<sphere radius="1" materia_id="4">
+			<pos x="6" y="0" z="20" />
+			<rotation x="0" y="90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1" materia_id="4">
+			<pos x="7" y="0" z="18" />
+			<rotation x="0" y="90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="0.4" materia_id="4">
+			<pos x="4" y="1.2" z="1" />
+			<rotation x="0" y="90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<cylinder radius="0.7" materia_id="4">
+			<pos x="-4" y="0" z="1" />
+			<rotation x="0" y="0" z="0" />
+			<translation x="0" y="0" z="0" />
+		</cylinder>
+		<cylinder radius="0.7" materia_id="4">
+			<pos x="4" y="0" z="1" />
+			<rotation x="0" y="0" z="0" />
+			<translation x="0" y="0" z="0" />
+			<limit_pos limit_pos="100" />
+			<limit_neg limit_neg="1" />
+		</cylinder>
+    </objects>
+    <materias>
+        <materia id="1" normal_id="2">
+            <color r="0.3" g="0.3" b="0.3" />
+            <shiness shiness="0.9" />
+            <reflect reflect="0.9" />
+            <refract refract="0" />
+        </materia>
+        <materia id="2">
+            <color r="0.3" g="0.3" b="0.3" />
+            <shiness shiness="0.9" />
+            <reflect reflect="0" />
+            <refract refract="0" />
+        </materia>
+		<materia id="3">
+			<color r="0" g="0" b="0" />
+			<shiness shiness="0.9" />
+			<reflect reflect="0.9" />
+			<refract refract="0" />
+		</materia>
+		<materia id="4">
+			<color r="0" g="0" b="0" />
+			<shiness shiness="0.9" />
+			<reflect reflect="0.9" />
+			<refract refract="0" />
+		</materia>
+    </materias>
+	<ambiant>
+		<color r="0.5" g="0.5" b="0.5" />
+	</ambiant>
+	<textures>
+		<texture id="2">
+			<type type="0" />
+			<src texture="./textures/grid_normal.png" />
+			<origin width="0" height="0"/>
+			<scale width="1" height="1"/>
+		</texture>
+	</textures>
+</scene>

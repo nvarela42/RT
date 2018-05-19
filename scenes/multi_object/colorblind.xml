@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<scene>
+	<camera>
+		<pos x="-0.5" y="0" z="-30" />
+		<look_at x="0" y="0" z="10" />
+		<up x="0" y="1" z="0" />
+	</camera>
+	<lights>
+		<light radius="0" spot="0">
+			<pos x="3" y="4" z="0" />
+		    <color r="1" g="1" b="1" />
+		</light>
+	</lights>
+	<objects>
+		<sphere radius="2" materia_id="1">
+			<pos x="-4" y="-4" z="10" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.8" materia_id="2">
+			<pos x="2" y="2" z="12" />
+			<rotation x="0" y="90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="2.1" materia_id="3">
+			<pos x="6" y="-1" z="6" />
+			<rotation x="0" y="90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="1.2" materia_id="4">
+			<pos x="-5" y="3" z="7" />
+			<rotation x="0" y="90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+	</objects>
+	<materias>
+		<materia id="1">
+			<color r="0" g="1" b="0" />
+			<shiness shiness="1" />
+			<reflect reflect="0.9" />
+			<refract refract="1" />
+		</materia>
+		<materia id="2">
+			<color r="1" g="0" b="0" />
+			<shiness shiness="1" />
+			<reflect reflect="0.9" />
+			<refract refract="1" />
+		</materia>
+		<materia id="3">
+			<color r="0" g="0" b="1" />
+			<shiness shiness="1" />
+			<reflect reflect="0.9" />
+			<refract refract="1" />
+		</materia>
+		<materia id="4">
+			<color r="1" g="1" b="0" />
+			<shiness shiness="1" />
+			<reflect reflect="0.9" />
+			<refract refract="1" />
+		</materia>
+	</materias>
+	<ambiant>
+		<color r="1" g="1" b="1" />
+	</ambiant>
+</scene>

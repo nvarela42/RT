@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<scene>
+	<camera>
+		<pos x="0" y="0" z="-30" />
+		<look_at x="0" y="0" z="10" />
+		<up x="0" y="1" z="0" />
+	</camera>
+	<lights>
+		<light radius="0.5" spot="0">
+			<pos x="0" y="0" z="-8" />
+		    <color r="1" g="0.5" b="0.5" />
+			<intensity intensity="0.1" />
+		</light>
+	</lights>
+	<objects>
+		<plane materia_id="1">
+			<pos x="0" y="-1" z="0" />
+			<normal x="0" y="1" z="0" />
+			<translation x="0" y="0" z="0" />
+		</plane>
+		<cone radius="15" materia_id="2">
+			<pos x="3" y="1" z="6.2" />
+			<rotation x="0" y="0" z="0" />
+			<translation x="0" y="0" z="0" />
+		</cone>
+		<cylinder radius="0.5" materia_id="3">
+			<pos x="0" y="3" z="6" />
+			<rotation x="90" y="0" z="0" />
+			<translation x="0" y="0" z="0" />
+		</cylinder>
+		<cylinder radius="1.5" materia_id="4">
+			<pos x="-3" y="0" z="6" />
+			<rotation x="0" y="0" z="0" />
+			<translation x="0" y="0" z="0" />
+		</cylinder>
+		<sphere radius="1" materia_id="5">
+			<pos x="0" y="2" z="5" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+		<sphere radius="2" materia_id="6">
+			<pos x="0" y="0" z="3" />
+			<rotation x="0" y="-90" z="0" />
+			<translation x="0" y="0" z="0" />
+		</sphere>
+	</objects>
+	<materias>
+		<materia id="1">
+			<color r="0.7" g="0.5" b="1" />
+			<shiness shiness="0" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+		<materia id="2">
+			<color r="0.25" g="1" b="0.6" />
+			<shiness shiness="0" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+		<materia id="3">
+			<color r="1" g="0.47" b="0.82" />
+			<shiness shiness="0" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+		<materia id="4">
+			<color r="0.74" g="1" b="0.18" />
+			<shiness shiness="0" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+		<materia id="5">
+			<color r="1" g="0.42" b="1" />
+			<shiness shiness="0" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+		<materia id="6">
+			<color r="0.4" g="1" b="0.2" />
+			<shiness shiness="0" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+	</materias>
+	<ambiant>
+		<color r="0.7" g="0.7" b="0.7" />
+	</ambiant>
+	<textures>
+		<texture id="1">
+			<type type="4" />
+			<src  texture="./textures/bump_normal.bmp" />
+			<origin width="0" height="0"/>
+			<scale width="1" height="1"/>
+		</texture>
+	</textures>
+</scene>

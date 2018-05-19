@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<scene>
+	<camera>
+		<pos x="-12" y="3" z="-5" />
+		<look_at x="0" y="0" z="0" />
+		<up x="0" y="1" z="0" />
+	</camera>
+	<lights>
+		<light radius="0.5" spot="0">
+			<pos x="0" y="3" z="-5" />
+		    <color r="1" g="1" b="1" />
+		</light>
+		<light radius="0.5" spot="0">
+			<pos x="-2" y="0" z="-5" />
+		    <color r="1" g="1" b="1" />
+		</light>
+	</lights>
+	<objects>
+		<plane materia_id="1">
+			<pos x="0" y="-1" z="0" />
+			<normal x="0" y="1" z="0" />
+			<translation x="0" y="0" z="0" />
+		</plane>
+		<cube size="1" materia_id="2" materia_id1="3" materia_id2="4" materia_id3="5" materia_id4="6" materia_id5="7">
+			<pos x="5" y="0" z="3" />
+		</cube>
+	</objects>
+	<materias>
+		<materia id="1" normal_id="2">
+			<color r="0.2" g="0.7" b="0.8" />
+			<shiness shiness="0.8" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+		<materia id="2" texture_id="1">
+			<color r="0.7" g="0.9" b="0.9" />
+			<shiness shiness="0.8" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+		<materia id="3" texture_id="1">
+			<color r="0.25" g="0.8" b="0.9" />
+			<shiness shiness="0.8" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+		<materia id="4" texture_id="1">
+			<color r="0.7" g="0.4" b="0.9" />
+			<shiness shiness="0.8" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+		<materia id="5" texture_id="1">
+			<color r="1" g="0.6" b="0.9" />
+			<shiness shiness="0.8" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+		<materia id="6" texture_id="1">
+			<color r="0.7" g="0.5" b="0.9" />
+			<shiness shiness="0.8" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+		<materia id="7" texture_id="1">
+			<color r="0.8" g="0.7" b="0.8" />
+			<shiness shiness="0.8" />
+			<reflect reflect="0" />
+			<refract refract="0" />
+		</materia>
+	</materias>
+	<ambiant>
+		<color r="0.5" g="0.5" b="0.5" />
+	</ambiant>
+	<textures>
+		<texture id="1">
+			<type type="0" />
+			<src texture="" />
+			<origin width="0" height="0"/>
+			<scale width="1" height="1"/>
+		</texture>
+		<texture id="2">
+			<type type="0" />
+			<src texture="./textures/723-normal.jpg" />
+			<origin width="0" height="0"/>
+			<scale width="1" height="1"/>
+		</texture>
+	</textures>
+</scene>

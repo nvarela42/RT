@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<!-- TYPES -->
+	<xsd:simpleType name="float1">
+		<xsd:restriction base="xsd:float">
+			<xsd:minInclusive value="0" />
+			<xsd:maxInclusive value="1" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="minint">
+		<xsd:restriction base="xsd:int">
+			<xsd:minInclusive value="1" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="origin">
+		<xsd:restriction base="xsd:int">
+			<xsd:minInclusive value="0" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="float2">
+		<xsd:restriction base="xsd:float">
+			<xsd:minInclusive value="0" />
+			<xsd:maxInclusive value="5" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="float3">
+		<xsd:restriction base="xsd:float">
+			<xsd:minInclusive value="1" />
+			<xsd:maxInclusive value="2" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="unitVec">
+		<xsd:restriction base="xsd:int">
+			<xsd:minInclusive value="-1" />
+			<xsd:maxInclusive value="1" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+<!-- SHININESS -->
+		<xsd:element name="shiness">
+			<xsd:complexType>
+				<xsd:simpleContent>
+					<xsd:extension base="xsd:string">
+						<xsd:attribute type="float1" name="shiness" use="required"/>
+					</xsd:extension>
+				</xsd:simpleContent>
+			</xsd:complexType>
+		</xsd:element>
+
+<!-- REFLECT -->
+		<xsd:element name="reflect">
+			<xsd:complexType>
+				<xsd:simpleContent>
+					<xsd:extension base="xsd:string">
+						<xsd:attribute type="float1" name="reflect" use="required"/>
+					</xsd:extension>
+				</xsd:simpleContent>
+			</xsd:complexType>
+		</xsd:element>
+
+<!-- REFRACT -->
+		<xsd:element name="refract">
+			<xsd:complexType>
+				<xsd:simpleContent>
+					<xsd:extension base="xsd:string">
+						<xsd:attribute type="float2" name="refract" use="required"/>
+					</xsd:extension>
+				</xsd:simpleContent>
+			</xsd:complexType>
+		</xsd:element>
+
+<!-- COLOR -->
+	<xsd:element name="color">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:attribute type="float1" name="r" use="required"/>
+					<xsd:attribute type="float1" name="g" use="required"/>
+					<xsd:attribute type="float1" name="b" use="required"/>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+<!-- INTENSITY -->
+	<xsd:element name="intensity">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:attribute type="xsd:float" name="intensity" use="required"/>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+<!-- POSITION -->
+	<xsd:element name="pos">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:attribute type="xsd:float" name="x"  use="required"/>
+					<xsd:attribute type="xsd:float" name="y"  use="required"/>
+					<xsd:attribute type="xsd:float" name="z"  use="required"/>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+<!-- POSITION_EDGES-->
+<xsd:element name="pos_edge1">
+	<xsd:complexType>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute type="xsd:float" name="x"  use="required"/>
+				<xsd:attribute type="xsd:float" name="y"  use="required"/>
+				<xsd:attribute type="xsd:float" name="z"  use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="pos_edge2">
+	<xsd:complexType>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute type="xsd:float" name="x"  use="required"/>
+				<xsd:attribute type="xsd:float" name="y"  use="required"/>
+				<xsd:attribute type="xsd:float" name="z"  use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="pos_edge3">
+	<xsd:complexType>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute type="xsd:float" name="x"  use="required"/>
+				<xsd:attribute type="xsd:float" name="y"  use="required"/>
+				<xsd:attribute type="xsd:float" name="z"  use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:element>
+
+<!-- ROTATION -->
+	<xsd:element name="rotation">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:attribute type="xsd:float" name="x"  use="required"/>
+					<xsd:attribute type="xsd:float" name="y"  use="required"/>
+					<xsd:attribute type="xsd:float" name="z"  use="required"/>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+<!-- TRANSLATION -->
+	<xsd:element name="translation">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:attribute type="xsd:float" name="x"  use="required"/>
+					<xsd:attribute type="xsd:float" name="y"  use="required"/>
+					<xsd:attribute type="xsd:float" name="z"  use="required"/>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+<!-- LOOK AT -->
+		<xsd:element name="look_at">
+			<xsd:complexType>
+				<xsd:simpleContent>
+					<xsd:extension base="xsd:string">
+						<xsd:attribute type="xsd:float" name="x"  use="required"/>
+						<xsd:attribute type="xsd:float" name="y"  use="required"/>
+						<xsd:attribute type="xsd:float" name="z"  use="required"/>
+					</xsd:extension>
+				</xsd:simpleContent>
+			</xsd:complexType>
+		</xsd:element>
+
+<!-- UP -->
+		<xsd:element name="up">
+			<xsd:complexType>
+				<xsd:simpleContent>
+					<xsd:extension base="xsd:string">
+						<xsd:attribute type="xsd:float" name="x"  use="required"/>
+						<xsd:attribute type="xsd:float" name="y"  use="required"/>
+						<xsd:attribute type="xsd:float" name="z"  use="required"/>
+					</xsd:extension>
+				</xsd:simpleContent>
+			</xsd:complexType>
+		</xsd:element>
+
+<!-- NORMAL -->
+	<xsd:element name="normal">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:attribute type="unitVec" name="x" use="required"/>
+					<xsd:attribute type="unitVec" name="y" use="required"/>
+					<xsd:attribute type="unitVec" name="z" use="required"/>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+<!-- LIMIT_POS -->
+		<xsd:element name="limit_pos">
+			<xsd:complexType>
+				<xsd:simpleContent>
+					<xsd:extension base="xsd:string">
+						<xsd:attribute type="xsd:float" name="limit_pos" use="required"/>
+					</xsd:extension>
+				</xsd:simpleContent>
+			</xsd:complexType>
+		</xsd:element>
+
+<!-- LIMIT_NEG -->
+		<xsd:element name="limit_neg">
+			<xsd:complexType>
+				<xsd:simpleContent>
+					<xsd:extension base="xsd:string">
+						<xsd:attribute type="xsd:float" name="limit_neg" use="required"/>
+					</xsd:extension>
+				</xsd:simpleContent>
+			</xsd:complexType>
+		</xsd:element>
+
+<!-- SPHERE -->
+	<xsd:element name="sphere">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element ref="pos"/>
+				<xsd:element ref="rotation"/>
+				<xsd:element ref="translation"/>
+			</xsd:choice>
+			<xsd:attribute type="xsd:float" name="radius" use="required"/>
+			<xsd:attribute type="xsd:int" name="materia_id" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+
+<!-- CYLINDER -->
+	<xsd:element name="cylinder">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element ref="pos"/>
+				<xsd:element ref="rotation"/>
+				<xsd:element ref="translation"/>
+				<xsd:element ref="limit_pos"/>
+				<xsd:element ref="limit_neg" minOccurs="0" maxOccurs="1"/>
+			</xsd:choice>
+			<xsd:attribute type="xsd:float" name="radius" use="required"/>
+			<xsd:attribute type="xsd:int" name="materia_id" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+
+<!-- CONE -->
+	<xsd:element name="cone">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element ref="pos"/>
+				<xsd:element ref="rotation"/>
+				<xsd:element ref="translation"/>
+			</xsd:choice>
+			<xsd:attribute type="xsd:float" name="radius" use="required"/>
+			<xsd:attribute type="xsd:int" name="materia_id" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+
+<!-- PLANE -->
+	<xsd:element name="plane">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element ref="pos"/>
+				<xsd:element ref="normal"/>
+				<xsd:element ref="translation"/>
+			</xsd:choice>
+			<xsd:attribute type="xsd:int" name="materia_id" use="required"/>
+			<xsd:attribute type="xsd:float" name="radius" default="0"/>
+		</xsd:complexType>
+	</xsd:element>
+
+<!-- TRIANGLE -->
+<xsd:element name="triangle">
+	<xsd:complexType>
+		<xsd:choice maxOccurs="unbounded">
+			<xsd:element ref="pos_edge1"/>
+			<xsd:element ref="pos_edge2"/>
+			<xsd:element ref="pos_edge3"/>
+		</xsd:choice>
+		<xsd:attribute type="xsd:int" name="materia_id" use="required"/>
+	</xsd:complexType>
+</xsd:element>
+
+<!-- CUBE -->
+<xsd:element name="cube">
+	<xsd:complexType>
+		<xsd:choice maxOccurs="unbounded">
+			<xsd:element ref="pos" minOccurs="1" maxOccurs="1"/>
+		</xsd:choice>
+		<xsd:attribute type="xsd:float" name="size" use="required"/>
+		<xsd:attribute type="xsd:int" name="materia_id" use="required"/>
+		<xsd:attribute type="xsd:int" name="materia_id1" use="required"/>
+		<xsd:attribute type="xsd:int" name="materia_id2" use="required"/>
+		<xsd:attribute type="xsd:int" name="materia_id3" use="required"/>
+		<xsd:attribute type="xsd:int" name="materia_id4" use="required"/>
+		<xsd:attribute type="xsd:int" name="materia_id5" use="required"/>
+
+	</xsd:complexType>
+</xsd:element>
+
+<!-- OBJECTS -->
+	<xsd:element name="objects">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded" minOccurs="1">
+				<xsd:element ref="cone" minOccurs="0"/>
+				<xsd:element ref="sphere" minOccurs="0"/>
+				<xsd:element ref="cylinder" minOccurs="0"/>
+				<xsd:element ref="plane" minOccurs="0"/>
+				<xsd:element ref="triangle" minOccurs="0"/>
+				<xsd:element ref="cube" minOccurs="0"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+
+<!--LIGHT-->
+		<xsd:element name="light">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element ref="pos" maxOccurs="1"/>
+					<xsd:element ref="color" maxOccurs="1"/>
+					<xsd:element ref="intensity"/>
+				</xsd:choice>
+				<xsd:attribute type="xsd:float" name="radius" use="required"/>
+				<xsd:attribute type="xsd:int" name="spot" use="required"/>
+				<xsd:attribute type="float1" name="rad_spot"/>
+			</xsd:complexType>
+		</xsd:element>
+
+<!--LIGHTS-->
+		<xsd:element name="lights">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element ref="light" minOccurs="1" maxOccurs="unbounded"/>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+
+<!-- AMBIANT -->
+	<xsd:element name="ambiant">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element ref="color" minOccurs="0" maxOccurs="1"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+
+<!-- MATERIA -->
+	<xsd:element name="materia">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element ref="color" maxOccurs="1"/>
+				<xsd:element ref="shiness" maxOccurs="1"/>
+				<xsd:element ref="reflect" maxOccurs="1"/>
+				<xsd:element ref="refract" maxOccurs="1"/>
+				<xsd:element ref="bump" maxOccurs="1"/>
+			</xsd:choice>
+			<xsd:attribute type="xsd:int" name="id" use="required"/>
+			<xsd:attribute type="xsd:int" name="texture_id" default="0"/>
+			<xsd:attribute type="xsd:int" name="normal_id" default="0"/>
+		</xsd:complexType>
+	</xsd:element>
+
+<!-- MATERIAS -->
+	<xsd:element name="materias">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element ref="materia" minOccurs="1" maxOccurs="unbounded"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+
+<!-- CAMERA -->
+	<xsd:element name="camera">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element ref="pos"/>
+				<xsd:element ref="look_at"/>
+				<xsd:element ref="up"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+
+<!-- TEXTURE -->
+
+
+	<xsd:element name="type">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:attribute type="xsd:float" name="type"  use="required"/>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="src">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:attribute type="xsd:string" name="texture"  default=""/>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="bump">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:attribute type="float1" name="bump" use="required"/>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="scale">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:attribute type="minint" name="width" use="required"/>
+					<xsd:attribute type="minint" name="height" use="required"/>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="origin">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:attribute type="origin" name="width" use="required"/>
+					<xsd:attribute type="origin" name="height" use="required"/>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+
+
+	<xsd:element name="textures">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element ref="texture" minOccurs="1" maxOccurs="unbounded"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+
+
+
+	<xsd:element name="texture">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element ref="type"/>
+				<xsd:element ref="src"/>
+				<xsd:element ref="scale" minOccurs="0" maxOccurs="1"/>
+				<xsd:element ref="origin" minOccurs="0" maxOccurs="1"/>
+			</xsd:choice>
+			<xsd:attribute type="xsd:int" name="id" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+
+<!--SCENE-->
+	<xsd:element name="scene">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="camera"/>
+				<xsd:element ref="lights"/>
+				<xsd:element ref="objects"/>
+				<xsd:element ref="materias"/>
+				<xsd:element ref="ambiant" minOccurs="0" maxOccurs="1"/>
+				<xsd:element ref="textures" minOccurs="0" maxOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
